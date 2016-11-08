@@ -1,0 +1,544 @@
+<!doctype html>
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!! READ ME !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  The following code is based on HTML, CSS, Bootstrap and a notch of JQuery (animations)
+  The objective of my iterations was to refresh the official LMU Medien website's look
+  and obviously make it more responsive and easier to navigate for anyone (but mostly students)
+
+  Most of the objects originate from original LMU's website and so all the rights belong to LMU
+  The website actually contains 2 versions (in relation to the used bootstrap code)
+  Nevertheless, the looks and usability will be different while used on different devices
+  Standard PC or Ultrabook, Smartphone or Tablet, even on a smartwatch, the website will behave
+  accordingly to its nature, so that the navigation stays fluent in each case
+
+  I decided to minimalize the amount of content visible on the website and narrow it down to the
+  most important or most visited by the prospective visitors.
+  - Publications are highly important for the view of the website
+Mission Impossible: Start
+      -->
+
+<html class="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<!-- Standard meta data stuff-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="University of Munich - Media Informatics">
+
+<meta name="keywords" content="University of Munich - Media Informatics">
+
+<meta name="author" content="LMU HCI2">
+
+<title>University of Munich - Media Informatics</title>
+
+<!--Neccessary files for the styling and such-->
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+
+<link href="portfolioResponsive.css" rel="stylesheet" type="text/css">
+
+<link href="portfolioStyle.css" rel="stylesheet" type="text/css">
+
+<!-- Bunch of css styles
+
+CSS
+
+-->
+
+<style type="text/css">
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+#hidden_content{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s ease;
+}
+
+#hidden_content1{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s ease;
+}
+
+#hidden_content2{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s ease;
+}
+
+:hov
+
+.cls
+
+element.style {
+}
+#funktionsbereich {
+    width: 955px;
+    height: 26px;
+    margin: auto;
+    text-align: left;
+    position: absolute;
+    top: 179px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: 0px -1px 1px #000;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from body#page.lang-en
+body {
+    font-size: 90%;
+}
+body {
+    background: #F2F2F2;
+    margin: 0px;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+
+
+element.style {
+}
+#top {
+    margin: auto;
+    max-width: 955px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from a.external
+:visited {
+    text-decoration: none;
+    color: #668866;
+}
+:link {
+    text-decoration: none;
+    color: #006633;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+Inherited from body#page.lang-en
+
+body {
+    background: #F2F2F2;
+    margin: 0px;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 90%;}
+
+li {
+  color:black;
+  list-style-type: none;
+}
+
+#top {
+    width: 100%;
+    height: 210px;
+    position: relative;
+    background: #eee url(images/header.jpg) left no-repeat;
+}
+
+#blabla{
+  margin-left:40px;
+}
+
+.poser{
+  margin-left:5%;
+}
+
+.poser1{
+  margin-left:85%;
+}
+
+a:hover{
+  color:gray;
+}
+
+</style>
+
+
+  <script src="http://use.edgefonts.net/montserrat:n4:default;alice:n4:default.js" type="text/javascript"></script>
+
+<!--Jquery library, safer on disk rather than as if I connected through the net to get it-->
+
+<script src="jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+
+<div class="gridContainer clearfix"> 
+
+<!-- First real part of the site begins here
+
+    I introduced forms, by relying on the grid system bootstrap has introduced
+    I stacked the content and made sure it would works well
+    At first a system of x3, with horizontal text and forms
+    Then a system of x3 with text over the forms
+    And when the system hits an appropriate treshold, it becomes x1,
+    with text and forms one over another.
+
+    It took me a while to figure this out, as a lot of errors came up underway
+    Eventually everything seems to work quite well-->
+
+<!-- Quite a bit of the material was extracted from the actual LMU Medien Website-->
+
+<div class="container-fluid">
+  <div id="top" class="no_print">
+</div>
+
+
+<div id="funktionen"><div class="funktionen poser">
+<a href="http://www.ifi.lmu.de/" target="_blank" class="external">Department for Informatics</a> |
+<a href="sitemap.xhtml">Sitemap</a> |
+<a href="http://www.portal.uni-muenchen.de" target="_blank" class="external">LMU-Portal</a>
+</div></div> <div class="poser1">
+<a href="language.php/index.xhtml.de">Deutsch</a>
+</div>
+</div>
+
+<!--O LOL-->
+
+  <div class="container-fluid">
+    <figure class="col-sm-2 ">
+
+<!--First column of the grid system-
+I decided to use the col-lg system as it best fits the style-->
+
+ <form class="form-horizontal" role="form">
+      <div class="form-group"> <!--form group makes space between the form inputs-->
+<ul class="nested">
+
+Menu<p>
+<hr>
+  <li><a href="./" class="curpage">Home</a></li><li><a href="studieninteressierte/">Future Students</a></li><li><a href="studierende/">Enrolled students</a></li><li><a href="lehre/">Teaching</a></li><li><a href="forschung/">Research</a></li><li><a href="team/">People</a></li><li><a href="kontakt.xhtml">Contact</a></li><li><a href="https://www.medien.ifi.lmu.de/intern/"><span class="fadetext">Internal</span></a></li></ul><hr>
+  </div>
+</form>
+      <figcaption class="textStyle"></figcaption>
+    </figure>
+    
+
+
+
+
+
+
+    <figure class="col-sm-4">
+
+       <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <ul>
+        Publications<p>
+        <hr>
+<div style="margin-bottom: 10px;" class="publication"><span style="color: #888; font-size: 0.9em; text-align:left"><a href="http://www.medien.ifi.lmu.de/team/alexander.wiethoff/">Alexander Wiethoff</a>, Marius Hoggenmueller<br><strong><a href="/forschung/publikationen/detail?pub=wiethoff2016degruyter2">Experiences Deploying Hybrid Media Architecture in Public Environments</a></strong></span></div>
+<div style="margin-bottom: 10px;" class="publication"><span style="color: #888; font-size: 0.9em; text-align:left"><a href="http://www.medien.ifi.lmu.de/team/alexander.wiethoff/">Alexander Wiethoff</a>, <a href="http://www.medien.ifi.lmu.de/team/heinrich.hussmann/">Heinrich Hussmann</a><br><strong><a href="/forschung/publikationen/detail?pub=wiethoff2016degruyter">Media Architecture: Using Information and Media as Construction Material </a></strong></span></div>
+<div style="margin-bottom: 10px;" class="publication"><span style="color: #888; font-size: 0.9em; text-align:left"><a href="http://www.medien.ifi.lmu.de/team/emanuel.von.zezschwitz/">Emanuel von Zezschwitz</a>, <a href="http://www.medien.ifi.lmu.de/team/malin.eiband/">Malin Eiband</a>, <a href="http://www.medien.ifi.lmu.de/team/daniel.buschek/">Daniel Buschek</a>, Sascha Oberhuber, <a href="http://www.medien.ifi.lmu.de/team/alexander.de.luca/">Alexander De Luca</a>, <a href="http://www.medien.ifi.lmu.de/team/florian.alt/">Florian Alt</a>, <a href="http://www.medien.ifi.lmu.de/team/heinrich.hussmann/">Heinrich Hussmann</a><br><strong><a href="/forschung/publikationen/detail?pub=zezschwitz2016mum">On Quantifying the Effective Password Space of Grid-based Unlock Gestures</a></strong></span></div>
+  </div>
+</ul>
+  </form>
+
+    
+      <figcaption class="textStyle"></figcaption>
+    </figure>
+
+
+
+
+
+
+<figure class="col-sm-6">
+ <form class="form-horizontal" role="form">
+      <div class="form-group">
+<ul>
+  News<p>
+  <hr>
+<li><span class="newsdate">04.11.2016: <strong>Consultation Hour Prof. Hussmann on 11th of November cancelled</strong></span><br>
+<span style="font-size: 0.9em;">An additional consultation hour is scheduled for Monday, 14th of November, 2pm, instead.</span></li>
+<li><span class="newsdate">14.10.2016: <strong>Conflicting lecture times "Analysis" and "Psychology 1"</strong></span><br>
+<span style="font-size: 0.9em;">There is an overlap of lecture times for "Analysis for computer scientists" and "Principles of psychology 1". We thus recommend that new students of Media Informatics with the application subject "Human Computer Interaction" swap "Analysis for computer scientists" and "Linear algebra for computer scientists". Full explanation <a href="http://www.medien.ifi.lmu.de/studierende/semesterplanung/bachelor/mmi/">here</a>.</span></li>
+<li><span class="newsdate">13.10.2016: <strong>Folien der Einführung BSc Medieninformatik</strong></span><br>
+<span style="font-size: 0.9em;">Die gesammelten Folien sind als eine (große) <a href="http://www.medien.ifi.lmu.de/studierende/BScMI_AlleFolien_1617.pdf" class="pdf">PDF-Datei</a> verfügbar.</span></li>
+</ul>
+  </div>
+
+
+    </figure>
+
+  </form>
+
+  </div>
+  
+<hr>
+
+  <div class="container-fluid">
+    <figure class="col-sm-4"> <!-- will make more space for the article-->
+
+<!--First column of the grid system-
+I decided to use the col-lg system as it best fits the style-->
+
+ <form class="form-horizontal" role="form">
+      <div class="form-group"> <!--form group makes space between the form inputs-->
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <button id="button" class="btn btn-success btn-block">Practical Courses</button> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<!--The following content will stay hidden until the user requests it to unfold (the button above)-->
+
+<div id="hidden_content">
+  <div id="test"></div> <!--Even though it's named test, it's hardly a test-->
+
+<ul class="compact">
+<li><a href="ws1617/dm/">Digital Media</a></li>
+<li><a href="ws1617/eipnf/">Introduction into programming with minor subject media informatics</a></li>
+<li><a href="ws1617/iv/">Information Visualization</a></li>
+<li><a href="ws1617/ifd/">Interface Design</a></li>
+<li><a href="ws1617/mmi2/">Human-Computer Interaction 2</a></li>
+<li><a href="ws1617/mmn/">Online Multimedia</a></li>
+<li><a href="ws1617/lcs/">Learning in Computer Science (für Master Learning Sciences)</a></li>
+<li><a href="http://www.pms.ifi.lmu.de/lehre/dshumancomp/16ws17/index.html" target="_blank" class="external">Human Computation and Analytics</a></li>
+</ul>
+  </div>
+</form>
+</div>
+      <figcaption class="textStyle"></figcaption>
+    </figure>
+    
+
+
+
+
+
+
+    <figure class="col-sm-4">
+
+       <form class="form-horizontal" role="form">
+      <div class="form-group">
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <button id="button1" class="btn btn-success btn-block">Practical Courses</button> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<!--The following content will stay hidden until the user requests it to unfold (the button above)-->
+
+<div id="hidden_content1">
+  <div id="test"></div> <!--Even though it's named test, it's hardly a test-->
+
+<ul class="compact">
+<li><a href="ws1617/ds/">Disputation Seminar Bachelor/Master</a></li>
+<li><a href="ws1617/hs/">Advanced Seminar Media Informatics</a></li>
+<li><a href="ws1617/psk/">Seminar Personal and Social Competencies</a></li>
+<li><a href="ws1617/sms/">Proseminar Social Media</a></li>
+<li><a href="ws1617/ps/">Proseminar Media Informatics</a></li>
+<li><a href="ws1617/ts/">Tutor Training</a></li>
+</ul>
+  </div>
+
+  </form>
+
+    </div>
+      <figcaption class="textStyle"></figcaption>
+    </figure>
+
+
+
+
+
+
+<figure class="col-sm-4">
+ <form class="form-horizontal" role="form">
+      <div class="form-group">
+
+<a href="#test"> <!--Comunicates with id 'test'-->
+  <button id="button2" class="btn btn-success btn-block">Practical Courses</button> <!-- A whole button block will definitely draw attention-->
+</a>
+
+<!--The following content will stay hidden until the user requests it to unfold (the button above)-->
+
+<div id="hidden_content2">
+  <div id="test"></div> <!--Even though it's named test, it's hardly a test-->
+
+<ul class="compact">
+
+<li><a href="ws1617/dw1/">Design Workshop 1</a></li>
+<li><a href="ws1617/dw2/">Design Workshop 2</a></li>
+<li><a href="ws1617/cd/">Practical Course Concept Development</a></li>
+<li><a href="ws1617/ivp/">Workshop Information Visualization with Processing</a></li>
+<li><a href="ws1617/p3d/">Practical Course 3D Modelling using Blender</a></li>
+<li><a href="ws1617/pem/">Practical Course Development of Media Systems</a></li>
+<li><a href="ws1617/pwp/">Practical Course Web Development</a></li>
+<li><a href="ws1617/pkm/">Projektkompetenz Multimedia</a></li>
+<li><a href="ws1617/pkmm/">Projektkompetenz Multimedia: Maya</a></li>
+<li><a href="ws1617/pmg/">Practical Course Media Design</a></li>
+<li><a href="ws1617/pue/">Practical Course User Experience Design</a></li>
+<li><a href="ws1617/swh/">Practical Course Sketching with Hardware</a></li>
+<li><a href="ws1617/zsk/">Course Drawing and Sketching of Screnarios</a></li>
+<li><a href="ws1617/ogw/">Open Games Workshop</a></li>
+</ul>
+
+</div> <!--uncovers-->
+  </div>
+
+
+    </figure>
+
+  </form>
+</div>
+
+<div class="container-fluid">
+<figure class="col-sm-3">
+ <form class="form-horizontal" role="form">
+      <div class="form-group">
+
+      </div></form></figure>
+
+      <figure class="col-sm-6">
+ <form class="form-horizontal" role="form">
+      <div class="form-group">
+  <div align="center" id="blabla"><span id="tooltip"><a href="http://www.facebook.com/LMU.Medieninformatik" class="external" target="_blank"><img src="facebook.png"> <!--<span id="facebook"></span> --></a></span> <span id="tooltip"><a href="https://twitter.com/mimuc" class="external" target="_blank"><img src="twitter.png"> <!--<span id="twitter"></span> --></a></span> <span id="tooltip"><a href="http://www.youtube.com/mediaInformaticsLMU" class="external" target="_blank"><img src="youtube.png"> <!-- <span id="youtube"></span> --></a></span> <span id="tooltip"><a href="http://mediainformatics.wordpress.com/" class="external" target="_blank"><img src="wordpress.png"> <!-- <span id="wordpress">Mimuc-Blog</span> --></a></span> <span id="tooltip"><a id="rss_link" href="http://www.medien.ifi.lmu.de/news/news_en.rss" class="external" target="_blank" name="rss_link"><img src="rss.png"> <!-- <span id="rss_feed">RSS-Feed</span> --></a></span></div>
+  </div></form></figure>
+
+<figure class="col-sm-3">
+ <form class="form-horizontal" role="form">
+      <div class="form-group">
+        
+</div></form></figure>
+</div>
+
+<div class="container-fluid">
+<figure class="col-sm-3">
+ <form class="form-horizontal" role="form">
+      <div class="form-group">
+
+      </div></form></figure>
+
+      <figure class="col-sm-6">
+ <form class="form-horizontal" role="form">
+      <div class="form-group">
+
+<a href="#top"> <!--This button will ease up to the top of the page, to the user's convenience (especially mobile ones)-->
+  <button class="btn btn-primary btn-block">Back To The Top</button>
+  </a>
+</div></form></figure>
+
+<figure class="col-sm-3">
+ <form class="form-horizontal" role="form">
+      <div class="form-group">
+        
+</div></form></figure>
+
+
+
+<!--This is The End My Friend!
+
+  Anyway, that's all, almost all, underneath you'll find more jquery stuff-->
+
+</div>
+</div>
+
+<!--
+This code will corelate with code using <a href="#Something"> and <(...) id="something">
+Code will corelate and move beyond each other
+
+I found the code on the following site:
+http://stackoverflow.com/questions/17130028/how-i-can-scroll-page-down-up-with-animation-in-html
+It's further explained over here:
+http://jsfiddle.net/gHS6b/
+
+That wasn't enough, so I decided to look for more way of constructing the website
+ -->
+
+<script>
+$(document).ready(function(){
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = this.hash, $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+</script>
+
+<!-- This code will toggle content on and off
+  The material supposed to convince the users will remain off, unless requested to be seen
+
+  It's possible to toggle on and off the hidden part
+  Also the name of the button will change, each time toggled
+
+  I found the script here:
+
+  http://jsfiddle.net/dRpWv/665/
+
+  I personally managed to combine two easing scripts, the one above and the one underneath
+  They work perfectly well-->
+
+<script>
+document.getElementById('button').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Lectures";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Lectures";
+    }
+}
+</script>
+
+<script>
+document.getElementById('button1').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content1');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Seminars";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Seminars";
+    }
+}
+</script>
+
+<script>
+document.getElementById('button2').onclick = function() {
+    this.__toggle = !this.__toggle;
+    var target = document.getElementById('hidden_content2');
+    if( this.__toggle) {
+        target.style.height = target.scrollHeight+"px";
+        this.firstChild.nodeValue = "Hide Practical Courses";
+    }
+    else {
+        target.style.height = 0;
+        this.firstChild.nodeValue = "Practical Courses";
+    }
+}
+</script>
+
+</body>
+</html>
+
